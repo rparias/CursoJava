@@ -27,34 +27,22 @@ class MarcoVentana extends JFrame{
         //setBounds(700, 300, 500, 300);
 
         //instancia de la clase oyente
-        M_Ventana oyenteVentana = new M_Ventana();
-        addWindowListener(oyenteVentana);   /*se pone la ventana a la escucha*/
+        /*M_Ventana oyenteVentana = new M_Ventana();
+        addWindowListener(oyenteVentana); */  /*se pone la ventana a la escucha*/
+
+        addWindowListener(new M_Ventana());
     }
 }
 
 
 //-----CLASE OYENTE-----//
-class M_Ventana implements WindowListener{
+/*en vez de usar la interfaz WindowListener usamos la clase adaptadora WindowAdapter*/
+class M_Ventana extends WindowAdapter{
     //se implementan por la interfaz
     public void windowActivated(WindowEvent e){
         System.out.println("Ventana activada");
     }
-    public void windowClosed(WindowEvent e){
-        System.out.println("La ventana ha sido cerrada");
-    }
-    public void windowClosing(WindowEvent e){
-        System.out.println("Cerrando ventana");
-    }
-    public void windowDeactivated(WindowEvent e){
-        System.out.println("Ventana desactivada");
-    }
-    public void windowDeiconified(WindowEvent e){
-        System.out.println("Ventana restaurada");
-    }
     public void windowIconified(WindowEvent e){
         System.out.println("Ventana minimizada");
-    }
-    public void windowOpened(WindowEvent e){
-        System.out.println("Ventana abierta");
     }
 }
