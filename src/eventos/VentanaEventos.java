@@ -23,7 +23,7 @@ public class VentanaEventos {
 class MarcoVentana extends JFrame{
     public MarcoVentana(){
         setVisible(true);
-        //setTitle("Ventanas y Eventos"); :)
+        //setTitle("Ventanas y Eventos");
         //setBounds(700, 300, 500, 300);
 
         //instancia de la clase oyente
