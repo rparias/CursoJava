@@ -6,7 +6,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowStateListener;
 
 /**
- * Creado por Ronald Arias - fecha: 30-dic-16.
+ * Creado por Ronald Arias - fecha: 30-dic-16. hola
  */
 public class CambioEstado {
     public static void main(String[] args){
