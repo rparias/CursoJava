@@ -1,8 +1,7 @@
 package eventosRaton;
 
 import javax.swing.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 
 /**
  * Creado por Ronald Arias - fecha: 30/12/2016.
@@ -23,10 +22,15 @@ class MarcoRaton extends JFrame{
         //instancia del objeto oyente
         EventosDeRaton raton = new EventosDeRaton();
         addMouseListener(raton);
+
+        //instancia del objeto oyente de movimiento de mouse
+        EventoRatonMov ratonMov = new EventoRatonMov();
+        addMouseMotionListener(ratonMov);
     }
 }
 
 //-----CLASE OYENTE-----//
+/*
 class EventosDeRaton implements MouseListener{
     public void mouseClicked(MouseEvent e) {
         System.out.println("Has hecho clic");
@@ -43,12 +47,35 @@ class EventosDeRaton implements MouseListener{
     public void mouseExited(MouseEvent e) {
         System.out.println("Acabas de salir del marco");
     }
-}
+}*/
 
 //-----CLASE OYENTE CON ADAPTER-----//
-/*
 class EventosDeRaton extends MouseAdapter{
     public void mouseClicked(MouseEvent e) {
-        System.out.println("Has hecho clic");
+        //System.out.println("Has hecho clic");
+        System.out.println("Coordenada X: " + e.getX() + " Coordenada Y: " + e.getY());
+        System.out.println("Total de clics: " + e.getClickCount());
     }
-}*/
+
+    public void mousePressed(MouseEvent e) {
+        //para saber que boton se presiono
+        if(e.getModifiersEx() == MouseEvent.BUTTON1_DOWN_MASK){
+            System.out.println("Has pulsado boton izquierdo");
+        }else if(e.getModifiersEx() == MouseEvent.BUTTON2_DOWN_MASK){
+            System.out.println("Has pulsado la rueda del raton");
+        }else{
+            System.out.println("Has pulsado el boton derecho");
+        }
+    }
+}
+
+//-----CLASE OYENTE PARA MOVIMIENTO DEL RATON------//
+class EventoRatonMov implements MouseMotionListener{
+    public void mouseDragged(MouseEvent e) {
+        System.out.println("Estas arrastrando");
+    }
+
+    public void mouseMoved(MouseEvent e) {
+        System.out.println("Estas moviendo el raton");
+    }
+}
