@@ -57,7 +57,20 @@ class LaminaFoco extends JPanel{
         }
 
         public void focusLost(FocusEvent e) {
-            System.out.println("He perdido el foco");
+            String email = cuadro1.getText();
+            boolean comprobacion = false;
+
+            for(int i = 0; i < email.length(); i++){
+                if(email.charAt(i) == '@'){
+                    comprobacion = true;
+                }
+            }
+
+            if(comprobacion){
+                System.out.println("El email es correcto");
+            }else{
+                System.out.println("El email es incorrecto");
+            }
         }
     }
 }
