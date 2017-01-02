@@ -40,6 +40,26 @@ class PanelAccion extends JPanel{
         add(new JButton(accionAmarillo));
         add(new JButton(accionAzul));
         add(new JButton(accionRojo));
+
+        //ACCIONES CON TECLAS//
+        /*Paso 1: Crear mapa de entrada*/
+        InputMap mapaEntrada = getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+
+        /*Paso 2: Crear combinacion de teclas*/
+        KeyStroke teclaAmarillo = KeyStroke.getKeyStroke("ctrl Y");
+        KeyStroke teclaAzul = KeyStroke.getKeyStroke("ctrl B");
+        KeyStroke teclaRojo = KeyStroke.getKeyStroke("ctrl R");
+
+        /*Paso 3: Asignar combinacion de teclas a objeto*/
+        mapaEntrada.put(teclaAmarillo, "fondo_amarillo");
+        mapaEntrada.put(teclaAzul, "fondo_azul");
+        mapaEntrada.put(teclaRojo, "fondo_rojo");
+
+        /*Paso 4: Asignar objeto a accion*/
+        ActionMap mapaAccion = getActionMap();
+        mapaAccion.put("fondo_amarillo", accionAmarillo);
+        mapaAccion.put("fondo_azul", accionAzul);
+        mapaAccion.put("fondo_rojo", accionRojo);
     }
 
 
