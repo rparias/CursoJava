@@ -21,7 +21,7 @@ class MarcoLayout extends JFrame{
 
         //instancias
         PanelLayout miLamina = new PanelLayout();
-        FlowLayout disposicion = new FlowLayout(FlowLayout.LEFT);   //alinear a la izq
+        FlowLayout disposicion = new FlowLayout(FlowLayout.LEFT, 50, 20);   //alinear a la izq con separacion
         miLamina.setLayout(disposicion);
         add(miLamina);
     }
