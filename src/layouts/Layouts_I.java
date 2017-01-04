@@ -1,6 +1,7 @@
 package layouts;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 /**
@@ -21,18 +22,32 @@ class MarcoLayout extends JFrame{
 
         //instancias
         PanelLayout miLamina = new PanelLayout();
-        FlowLayout disposicion = new FlowLayout(FlowLayout.LEFT, 50, 20);   //alinear a la izq con separacion
-        miLamina.setLayout(disposicion);
-        add(miLamina);
+        PanelLayout2 miLamina2 = new PanelLayout2();
+        add(miLamina, BorderLayout.NORTH);
+        add(miLamina2, BorderLayout.SOUTH);
+    }
+}
+    //-----LAMINA PARA BOTONES CON FLOWLAYOUT-----//
+class PanelLayout extends JPanel{
+    public PanelLayout(){
+
+        /*con FlowLayout para Alinear*/
+        setLayout(new FlowLayout(FlowLayout.LEFT));   //alinear a la izq
+
+        add(new JButton("Amarillo"));
+        add(new JButton("Azul"));
     }
 }
 
-class PanelLayout extends JPanel{
-    public PanelLayout(){
-        add(new JButton("Amarillo"));
-        add(new JButton("Azul"));
-        add(new JButton("Rojo"));
+//-----LAMINA PARA BOTONES CON BORDERLAYOUT-----//
+class PanelLayout2 extends JPanel{
+    public PanelLayout2(){
 
+        /*con BorderLayout para Norte, Sur, Este, Oeste y Centro*/
+        setLayout(new BorderLayout());
 
+        add(new JButton("Rojo"), BorderLayout.WEST);
+        add(new JButton("Verde"), BorderLayout.EAST);
+        add(new JButton("Negro"), BorderLayout.CENTER);
     }
 }
