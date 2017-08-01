@@ -37,7 +37,7 @@ class LaminaCalculadora extends JPanel{
     private String ultimaOperacion;
 
     public LaminaCalculadora(){
-        //disposicion de borderLayout
+        //asigno la disposicion de borderLayout
         setLayout(new BorderLayout());
 
         pantalla = new JButton("0");
@@ -84,10 +84,12 @@ class LaminaCalculadora extends JPanel{
     //metodo para agregar los botones y ponerlos a la escucha
     private void ponerBoton(String rotulo, ActionListener oyente){
         JButton boton = new JButton(rotulo);
-        boton.addActionListener(oyente);
+        boton.addActionListener(oyente);    //addActionListener => al hacer clic
         laminaBotones.add(boton);
     }
 
+    //esta clase recibe el evento del boton
+    //clase privada para los botones oyentes
     private class InsertaNumero implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -102,6 +104,7 @@ class LaminaCalculadora extends JPanel{
         }
     }
 
+    //esta clase recibe el evento del boton
     //clase privada para las operaciones
     private class AccionOrden implements ActionListener{
         @Override
