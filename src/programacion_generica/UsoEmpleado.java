@@ -1,13 +1,10 @@
 package programacion_generica;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class UsoEmpleado {
     public static void main(String[] args) {
-        /*Empleado listaEmpleados[] = new Empleado[3];
-        listaEmpleados[0] = new Empleado("Ronald", 25, 300);
-        listaEmpleados[1] = new Empleado("Gabby", 24, 500);
-        listaEmpleados[2] = new Empleado("Erick", 18, 900);*/
 
         ArrayList<Empleado> listaEmpleados = new ArrayList<Empleado>();
 
@@ -17,15 +14,23 @@ public class UsoEmpleado {
         listaEmpleados.add(new Empleado("Ronald", 25, 300));
         listaEmpleados.add(new Empleado("Gabby", 24, 500));
         listaEmpleados.add(new Empleado("Erick", 18, 900));
-        listaEmpleados.add(new Empleado("Majo", 21, 600));
+        listaEmpleados.add(new Empleado("Noemi", 53, 600));
+
+        //cambia un empleado en una posicion especifica
+        listaEmpleados.set(2, new Empleado("Jose", 47, 800));
 
         //para ahorrar un exceso de memoria, se puede cerrar el arrayList si no se agregan mas elementos
         listaEmpleados.trimToSize();
 
+        //imprimir un empleado de una posicion especifica
+        System.out.println("Empleado en posicion 3: " + listaEmpleados.get(2).getDatos());
+
         System.out.println("Elementos en total: " + listaEmpleados.size());
 
-        for(Empleado e: listaEmpleados){
-            System.out.println(e.getDatos());
+        //iterator para recorrer el arrayList
+        Iterator<Empleado> iterador = listaEmpleados.iterator();
+        while (iterador.hasNext()){
+            System.out.println(iterador.next().getDatos());
         }
     }
 }
