@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="601b8cee-c8d8-4b17-938e-056ac03ba3a3" name="Default" comment="Uso de ArrayList">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/programacion_generica/UsoEmpleado.java" afterPath="$PROJECT_DIR$/src/programacion_generica/UsoEmpleado.java" />
-    </list>
+    <list default="true" id="601b8cee-c8d8-4b17-938e-056ac03ba3a3" name="Default" comment="Uso de ArrayList" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UsoEmpleado.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsoEmpleado.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/programacion_generica/UsoEmpleado.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
@@ -27,6 +25,40 @@
                 <element signature="e#219#229#0" expanded="true" />
                 <element signature="e#1661#1662#0" expanded="true" />
                 <element signature="e#1751#1752#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pareja.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/programacion_generica/clases_propias/Pareja.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding>
+                <element signature="e#160#161#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsoPareja.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/programacion_generica/clases_propias/UsoPareja.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="28" column="62" lean-forward="false" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+              <folding>
+                <element signature="e#157#165#0" expanded="true" />
+                <element signature="e#595#604#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,6 +91,8 @@
         <option value="$PROJECT_DIR$/src/areasTexto/EjemploArea.java" />
         <option value="$PROJECT_DIR$/src/areasTexto/EjemploArea2.java" />
         <option value="$PROJECT_DIR$/src/programacion_generica/UsoEmpleado.java" />
+        <option value="$PROJECT_DIR$/src/programacion_generica/clases_propias/Pareja.java" />
+        <option value="$PROJECT_DIR$/src/programacion_generica/clases_propias/UsoPareja.java" />
       </list>
     </option>
   </component>
@@ -200,6 +234,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="programacion_generica" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CursoJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CursoJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="programacion_generica" type="462c0819:PsiDirectoryNode" />
+              <item name="clases_propias" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CursoJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CursoJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="programacion_generica" type="462c0819:PsiDirectoryNode" />
+              <item name="clases_propias" type="462c0819:PsiDirectoryNode" />
+              <item name="UsoPareja.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -224,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UsoEmpleado">
+  <component name="RunManager" selected="Application.UsoPareja">
     <configuration name="CampoPassword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -290,6 +339,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="programacion_generica.UsoEmpleado" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CursoJava" />
+      <envs />
+    </configuration>
+    <configuration name="UsoPareja" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="programacion_generica.clases_propias.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="programacion_generica.clases_propias.UsoPareja" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -382,39 +450,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="eventosCuadros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cuadrosTexto.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="cuadrosTexto.eventosCuadros" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CursoJava" />
-      <envs />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.eventosCuadros" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CampoPassword" />
-      <item index="2" class="java.lang.String" itemvalue="Application.EjemploArea" />
-      <item index="3" class="java.lang.String" itemvalue="Application.EjemploArea2" />
-      <item index="4" class="java.lang.String" itemvalue="Application.UsoEmpleado" />
+      <item index="0" class="java.lang.String" itemvalue="Application.CampoPassword" />
+      <item index="1" class="java.lang.String" itemvalue="Application.EjemploArea" />
+      <item index="2" class="java.lang.String" itemvalue="Application.EjemploArea2" />
+      <item index="3" class="java.lang.String" itemvalue="Application.UsoEmpleado" />
+      <item index="4" class="java.lang.String" itemvalue="Application.UsoPareja" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.UsoEmpleado" />
-        <item index="1" class="java.lang.String" itemvalue="Application.EjemploArea2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.EjemploArea" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CampoPassword" />
-        <item index="4" class="java.lang.String" itemvalue="Application.eventosCuadros" />
+        <item index="0" class="java.lang.String" itemvalue="Application.UsoPareja" />
+        <item index="1" class="java.lang.String" itemvalue="Application.UsoEmpleado" />
+        <item index="2" class="java.lang.String" itemvalue="Application.EjemploArea2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.EjemploArea" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CampoPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -459,7 +508,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31905782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31905782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -780,6 +829,36 @@
             <element signature="e#219#229#0" expanded="true" />
             <element signature="e#1661#1662#0" expanded="true" />
             <element signature="e#1751#1752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/programacion_generica/clases_propias/Pareja.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/programacion_generica/clases_propias/UsoPareja.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="28" column="62" lean-forward="false" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+          <folding>
+            <element signature="e#157#165#0" expanded="true" />
+            <element signature="e#595#604#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
           </folding>
         </state>
       </provider>
