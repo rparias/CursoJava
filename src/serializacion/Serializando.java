@@ -15,11 +15,13 @@ public class Serializando {
 
         //utilizo las clases para serializar ObjectOutputStream y ObjectInputStream con sus respectivos metodos
         try{
+            //EMISOR
             //direccion donde se guardara el archivo serializado, puede ser cualquiera
             ObjectOutputStream escribiendo_fichero = new ObjectOutputStream(new FileOutputStream("D:/UDLA/GitHub/CursoJava/src/serializacion/carpeta_guardar/empleado.dat"));
             escribiendo_fichero.writeObject(personal);
             escribiendo_fichero.close();
 
+            //RECEPTOR
             //recupero mi archivo con ObjectInputStream
             ObjectInputStream recuperando_fichero = new ObjectInputStream(new FileInputStream("D:/UDLA/GitHub/CursoJava/src/serializacion/carpeta_guardar/empleado.dat"));
             Empleado[] personalRecuperado = (Empleado[]) recuperando_fichero.readObject();
@@ -40,6 +42,9 @@ public class Serializando {
 //como se va a serializar un objeto tipo Empleado, debe usar la interfaz Serializable
 
 class Empleado implements Serializable{
+
+    //para que no importe la version del receptor o emisor se usa un SerialVersionUID en donde se implemente Serializable
+    private static final long serialVersionUID = 1L;
 
     String nombre;
     double sueldo;
@@ -94,6 +99,8 @@ class Empleado implements Serializable{
 
 //--------------------CLASE JEFE--------------------//
 class Administrador extends Empleado{
+
+    private static final long serialVersionUID = 1L;
 
     private double incentivo;
 
