@@ -20,7 +20,7 @@ public class FechaHerencia {
 
         arrayEmpleados[3] = jefeRRHH;   //POLIMORFISMO!!!
         /**POLIMORFISMO O PRINCIPIO DE SUSTITUCION
-         * Se puede utilizar un objeto de la subclase(Jefe por ejemplo) siempre
+         * Se puede utilizar un objeto de la subclase(Administrador por ejemplo) siempre
          * que el programa espere un objeto de la superclase(Empleados en este caso)*/
 
         arrayEmpleados[4] = new Jefe("Maria", 95000, 1999, 05, 26);
@@ -53,7 +53,7 @@ public class FechaHerencia {
                     " -- Fecha de alta: " + emp.getFechaAlta());
         }
         /**En emp se cumple el ENLAZADO DINAMICO, ya que getSueldo a veces llama
-         * al de la clase empleado y otras veces al de la clase Jefe, de esta
+         * al de la clase empleado y otras veces al de la clase Administrador, de esta
          * forma se puede ver mejor como funciona el polimorfismo*/
     }
 }
