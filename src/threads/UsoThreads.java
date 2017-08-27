@@ -29,7 +29,9 @@ class PelotaHilos implements Runnable{
     @Override
     public void run() {
         //---Paso 2: escribir el codigo de la tarea dentro de este metodo
-        for (int i=1; i<=3000; i++){
+
+        //-forma1:
+        /*for (int i=1; i<=3000; i++){
             pelota.mueve_pelota(componente.getBounds());
             componente.paint(componente.getGraphics());
 
@@ -37,9 +39,25 @@ class PelotaHilos implements Runnable{
             try {
                 Thread.sleep(4);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                System.out.println("Hilo bloqueado, no se puede interrumpir");
             }
+        }*/
+
+        //-forma2:
+        /*while(!Thread.interrupted()){
+            pelota.mueve_pelota(componente.getBounds());
+            componente.paint(componente.getGraphics());
+        }*/
+
+        System.out.println("Estado del hilo al comenzar: " + Thread.currentThread().isInterrupted());
+
+        //-forma3:
+        while(!Thread.currentThread().isInterrupted()){
+            pelota.mueve_pelota(componente.getBounds());
+            componente.paint(componente.getGraphics());
         }
+
+        System.out.println("Estado del hilo al finalizar: " + Thread.currentThread().isInterrupted());
     }
 }
 
@@ -118,6 +136,7 @@ class LaminaPelota extends JPanel{
 class MarcoRebote extends JFrame{
 
     private LaminaPelota lamina;
+    private Thread t;
 
     public MarcoRebote(){
         setBounds(600,300,400,350);
@@ -136,6 +155,13 @@ class MarcoRebote extends JFrame{
         ponerBoton(laminaBotones, "Salir", new ActionListener(){
             public void actionPerformed(ActionEvent evento){
                 System.exit(0);
+            }
+        });
+        add(laminaBotones, BorderLayout.SOUTH);
+
+        ponerBoton(laminaBotones, "Detener", new ActionListener(){
+            public void actionPerformed(ActionEvent evento){
+                detener();
             }
         });
         add(laminaBotones, BorderLayout.SOUTH);
@@ -159,9 +185,16 @@ class MarcoRebote extends JFrame{
         Runnable r = new PelotaHilos(pelota, lamina);
 
         //---Paso 4: crear instancia de la clase Thread y pasar como parametro al constructor el objeto Runnable
-        Thread t = new Thread(r);
+        t = new Thread(r);
 
         //---Paso 5: poner en marcha el hilo con start()
         t.start();
+    }
+
+    //-------------------------INTERRUPCION DE HILOS-------------------------//
+    //Detiene el hilo del programa
+    public void detener(){
+        t.interrupt();
+        //esto genera un try-catch InterruptedException en el run por el sleep
     }
 }
