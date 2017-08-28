@@ -21,10 +21,10 @@ class Banco{
     private final double[] cuentas;
 
     //instancia de ReentrantLock para bloquear y desbloquear
-    private Lock cierraBanco = new ReentrantLock();
+    //private Lock cierraBanco = new ReentrantLock();
 
     //creo una condicion
-    private Condition saldoSuficiente;
+    //private Condition saldoSuficiente;
 
     //creo 100 cuentas con 2000 dolares cada una
     public Banco() {
@@ -34,14 +34,17 @@ class Banco{
         }
 
         //cada vez q se crea un banco se crea un bloqueo establecido con una condicion
-        saldoSuficiente = cierraBanco.newCondition();
+        //saldoSuficiente = cierraBanco.newCondition();
     }
 
     //este es el metodo que hace que funcionen las transferencias automaticas
-    public void transferencia(int ctaOrigen, int ctaDestino, double cantidad) throws InterruptedException {
+    public synchronized void transferencia(int ctaOrigen, int ctaDestino, double cantidad) throws InterruptedException {
 
+        //TODO comento esto prque al usar synchronized ya no es necesario y lo reescribo abajo
+        /*
         //bloqueo el siguiente segmento de codigo solo para un hilo y lo pongo en un try
         cierraBanco.lock();
+
 
         try{
             while(cuentas[ctaOrigen] < cantidad) {  //evalua si el saldo no es mayor a la transferencia
@@ -60,7 +63,20 @@ class Banco{
 
         }finally {
             cierraBanco.unlock();   //desbloqueo el segmento de codigo anterior para el siguiente hilo
+        }*/
+
+        while(cuentas[ctaOrigen] < cantidad) {  //evalua si el saldo no es mayor a la transferencia
+
+            //mientras sea verdad (saldo insuficiente) el hilo permanezca a la espera
+            wait();
         }
+        System.out.println("Hilo actual: " + Thread.currentThread());
+        cuentas[ctaOrigen] -= cantidad; //dinero q sale de la ctaOrigen
+        System.out.printf("%10.2f de %d para %d", cantidad, ctaOrigen, ctaDestino);
+        cuentas[ctaDestino] += cantidad;    //dinero que ingresa a la ctaDestino
+        System.out.printf("\nSaldo total: %10.2f%n", getSaldoTotal());
+
+        notifyAll();    //despierto a los hilos a la espera de la condicion
     }
 
     public double getSaldoTotal(){

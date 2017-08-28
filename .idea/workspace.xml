@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e2c9a05-060d-4e57-9499-f636ed5ea9ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CursoJava/threads/Banco.class" afterPath="$PROJECT_DIR$/out/production/CursoJava/threads/Banco.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CursoJava/threads/EjecucionTransferencias.class" afterPath="$PROJECT_DIR$/out/production/CursoJava/threads/EjecucionTransferencias.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/threads/BancoSinSincronizar.java" afterPath="$PROJECT_DIR$/src/threads/BancoSinSincronizar.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,8 +53,8 @@
       <file leaf-file-name="BancoSinSincronizar.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/threads/BancoSinSincronizar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="58" column="95" lean-forward="false" selection-start-line="58" selection-start-column="95" selection-end-line="58" selection-end-column="95" />
+            <state relative-caret-position="138">
+              <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -351,12 +348,12 @@
       <updated>1503813744707</updated>
       <workItem from="1503813747488" duration="1987000" />
       <workItem from="1503850256520" duration="6233000" />
-      <workItem from="1503881713981" duration="5023000" />
+      <workItem from="1503881713981" duration="5910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13243000" />
+    <option name="totallyTimeSpent" value="14130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="865" y="0" width="1062" height="1047" extended-state="0" />
@@ -539,8 +536,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/threads/BancoSinSincronizar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="58" column="95" lean-forward="false" selection-start-line="58" selection-start-column="95" selection-end-line="58" selection-end-column="95" />
+        <state relative-caret-position="138">
+          <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
