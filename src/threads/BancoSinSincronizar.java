@@ -41,6 +41,7 @@ class Banco{
     public synchronized void transferencia(int ctaOrigen, int ctaDestino, double cantidad) throws InterruptedException {
 
         //TODO comento esto prque al usar synchronized ya no es necesario y lo reescribo abajo
+        //TODO esto se puede hacer solo porque tengo una sola condicion
         /*
         //bloqueo el siguiente segmento de codigo solo para un hilo y lo pongo en un try
         cierraBanco.lock();
