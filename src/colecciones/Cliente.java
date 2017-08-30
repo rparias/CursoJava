@@ -34,4 +34,20 @@ public class Cliente {
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+
+    //sobreescribo los metodos para diferenciar por numero de cuenta
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Cliente cliente = (Cliente) o;
+
+        return numeroCuenta != null ? numeroCuenta.equals(cliente.numeroCuenta) : cliente.numeroCuenta == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return numeroCuenta != null ? numeroCuenta.hashCode() : 0;
+    }
 }
