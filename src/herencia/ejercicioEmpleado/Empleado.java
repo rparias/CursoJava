@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
- * Creado por Ronald Arias - fecha: 20-dic-16.
+ * Creado por Ronald Arias - fecha: 06-oct-17.
  */
 public class Empleado implements Comparable, InterfazTrabajadores{
     String nombre;
