@@ -3,7 +3,7 @@ package herencia.ejercicioEmpleado;
 import java.util.Arrays;
 
 /**
- * Creado por Ronald Arias - fecha: 19-dic-16.
+ * Creado por Ronald Arias - fecha: 06-oct-17.
  */
 public class FechaHerencia {
     public static void main(String[] args){
